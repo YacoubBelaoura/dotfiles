@@ -1,0 +1,54 @@
+# reload sxhkd
+alt + Escape
+  pkill -USR1 -x sxhkd
+#==== i3wm     ======================================================
+
+#==== PROGRAMS ======================================================
+
+control + alt + w
+    arcolinux-welcome-app
+
+control + alt + e
+    archlinux-tweak-tool
+
+super + Return
+    alacritty
+
+# rofi apps ==-
+# -- Rofi -- USE SXHKD DOUBLE KEY BINDING with $mod1+r {n,x,m,s,r,w}
+alt + r; {l,n,p,m,s,r,w}
+  {~/.config/i3/rofi/bin/launcher \
+  ,~/.config/i3/rofi/bin/network_menu \
+  ,~/.config/i3/rofi/bin/powermenu \
+  ,~/.config/i3/rofi/bin/mpd \
+  ,~/.config/i3/rofi/bin/screenshot \
+  ,~/.config/i3/rofi/bin/asroot \
+  ,~/.config/i3/rofi/bin/windows }
+
+# mpc Music Player =>
+alt + m; {p,n,v,r,t,s,u,d}
+  { mpc toggle, \
+    mpc next, \
+    mpc prev, \
+    mpc random, \
+    mpc repeat, \
+    mpc stop, \
+    mpc volume +10,\
+    mpc volume -10 \
+  }
+
+# dmenu_run =>
+super + shift + d 
+  dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
+
+# xfce4 appfinder =>
+alt + F{2,3}
+  { xfce4-appfinder --collapsed, \
+    xfce4-appfinder }
+
+# Rofi launcher =>
+super + F{11,12}
+  { ~/.config/i3/rofi/bin/launchers 0w,\
+    ~/.config/i3/rofi/bin/launchers 01 }
+
+
