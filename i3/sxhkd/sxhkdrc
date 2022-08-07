@@ -48,7 +48,7 @@ alt + F{2,3}
 
 # Rofi launcher =>
 super + F{11,12}
-  { ~/.config/i3/rofi/bin/launchers 0w,\
+  { ~/.config/i3/rofi/bin/launchers 02,\
     ~/.config/i3/rofi/bin/launchers 01 }
 
 
