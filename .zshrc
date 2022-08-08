@@ -88,7 +88,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 # plugins=(git)
 plugins=(
-  git colored-man-pages fast-syntax-highlighting zsh-autosuggestions tmux tmux-cssh man composer python virtualenv
+  git colored-man-pages  zsh-autosuggestions tmux tmux-cssh man composer python virtualenv zsh-syntax-highlighting
 )
 
 if [ -f $ZSH/oh-my-zsh.sh ]; then
@@ -483,3 +483,11 @@ neofetch
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"

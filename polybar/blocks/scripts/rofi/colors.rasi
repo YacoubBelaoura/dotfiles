@@ -6,6 +6,21 @@
   bga:  #C4C7C5FF;
   fga:  #C4C7C5FF;
   fg:   #1C1E20FF;
-  ac:   #61C766FF;
-  se:   #61C76640;
+  ac:   #75A4CDFF;
+  se:   #75A4CD40;
+}
+
+element-icon {
+    background-color: #282c34;  /*<<-- change to your color */
+    size:                           24px;
+    border:                         0px;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+    expand:                         true;
+    horizontal-align:               0;
+    vertical-align:                 0.5;
+    margin:                         0px 2.5px 0px 2.5px;
 }
