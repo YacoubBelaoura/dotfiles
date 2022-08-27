@@ -12,7 +12,7 @@ control + alt + e
     archlinux-tweak-tool
 
 super + Return
-    alacritty
+    kitty
 
 # rofi apps ==-
 # -- Rofi -- USE SXHKD DOUBLE KEY BINDING with $mod1+r {n,x,m,s,r,w}
